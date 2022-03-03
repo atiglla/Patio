@@ -17,7 +17,6 @@
         flex-wrap: wrap;
     }
     .cuadro {
-        background-color:aquamarine;
         width: 10em;
         height: 10em;
         margin: 5px 5px;
@@ -29,9 +28,8 @@
 <body>
     <header><h1>Welcome!</h1></header>
     <main>
-        <div class="cuadro"></div>
-        {%for x in range(0,times-1)%}
-            <div class="cuadro"></div>
+        {%for x in range(0,times)%}
+            <div class="cuadro" style="background-color: {{color}};"></div>
         {% endfor%}
     </main>
 </body>
