@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1 {
+        text-align: center;
+        }
+    main {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;  
+        flex-wrap: wrap;
+    }
+    .cuadro {
+        background-color:aquamarine;
+        width: 10em;
+        height: 10em;
+        margin: 5px 5px;
+        border: 2px solid black;
+        border-radius: 10px;   
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Welcome!</h1></header>
+    <main>
+        <div class="cuadro"></div>
+        {%for x in range(0,times-1)%}
+            <div class="cuadro"></div>
+        {% endfor%}
+    </main>
+</body>
+</html>
